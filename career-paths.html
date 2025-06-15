@@ -113,6 +113,30 @@
       }
     }
   </style>
+  <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
  </head>
  <body class="font-sans bg-gray-50">
   <!-- Header & Navigation -->
@@ -242,8 +266,8 @@
   
 
   <!-- Hero Section -->
-  <section class="hero-wrapper flex items-center text-white">
-   <img alt="Plumber working on pipes in a modern building with tools and blueprints, daylight" class="hero-image" height="600" src="https://storage.googleapis.com/a1aa/image/c06c5ccf-72b6-4a38-77b7-1867d7dd1e1e.jpg" width="2070"/>
+  <section class="hero-wrapper flex items-center text-white h-[90vh]">
+   <img alt="Plumber working on pipes in a modern building with tools and blueprints, daylight" class="hero-image h-[90vh]"  src="https://storage.googleapis.com/a1aa/image/c06c5ccf-72b6-4a38-77b7-1867d7dd1e1e.jpg" width="2070"/>
    <div class="hero-overlay">
    </div>
    <div class="container mx-auto px-4 py-20 hero-content" data-aos="fade-up">

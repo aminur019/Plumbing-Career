@@ -1,0 +1,1132 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Teachers Guide to Plumbing Careers | PIRB
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 82, 147, 0.9) 0%,
+          rgba(0, 132, 214, 0.8) 100%
+        );
+      }
+      .card-hover-effect {
+        transition: all 0.3s ease;
+      }
+      .card-hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .nav-shadow {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      }
+      .highlight-section {
+        background-color: rgba(0, 132, 214, 0.05);
+        border-left: 4px solid #0084d6;
+      }
+      .trait-card {
+        transition: all 0.3s ease;
+      }
+      .trait-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+        .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(5px);
+      }
+      #sticky-menu {
+        transition: width 0.3s ease;
+        width: 3.5rem;
+      }
+      #sticky-menu:hover {
+        width: 14rem;
+      }
+      #sticky-menu nav a {
+        transition: padding 0.3s ease;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      #sticky-menu:hover nav a {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      #sticky-menu nav a span.text-label {
+        opacity: 0;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 0;
+      }
+      #sticky-menu:hover nav a span.text-label {
+        opacity: 1;
+        max-width: 1000px;
+        margin-left: 0.75rem;
+      }
+      #progress-nav {
+        display: none;
+      }
+      @media (max-width: 767px) {
+        #sticky-menu {
+          display: none;
+        }
+        #progress-nav {
+          display: flex;
+          position: fixed;
+          top: 20px;
+          left: 0;
+          flex-direction: column;
+          background: white;
+          box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+          border-radius: 0 0.5rem 0.5rem 0;
+          padding: 0.75rem;
+          z-index: 40;
+        }
+      }
+  </style>
+   <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
+ </head>
+ <body class="font-sans antialiased text-gray-800">
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center">
+     <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
+      PIRB
+     </div>
+     <span class="text-xl font-semibold text-gray-800">
+      Plumbing Careers
+     </span>
+    </div>
+    <nav class="hidden md:flex space-x-8">
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300"href="#why-plumbing-matters">
+      Why Plumbing Matters
+     </a>
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#value-of-trades">
+      Value of Trades
+     </a>
+	 
+	 
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300"  href="#career-opportunities">
+      Career Opportunities
+     </a>
+	 
+	 
+	 
+	 
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300"  href="#practical-learning">
+      Practical Learning
+     </a>
+	 
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300"  href="#subject-choices">
+      Subject Choices
+     </a>
+	 
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300"  href="#work-ethic">
+      Work Ethic
+     </a>
+	      <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#networking">
+      Networking
+     </a>
+    </nav>
+
+    <button aria-expanded="false" aria-label="Toggle mobile menu" class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200 pb-8" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="index.html">
+     Home
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="opportunities.html">
+     Opportunities
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="industry-insights.html">
+     Industry Insights
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="career-paths.html">
+     Career Paths
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="education.html">
+     Education
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="beyond-qualification.html">
+     Beyond Qualification
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="parents.html">
+     Parents
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-blue-50" href="#teachers.html">
+     Teachers
+    </a>
+    <a class="block px-4 py-3 mt-2 mx-4 text-center border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition" href="https://www.pirb.co.za" rel="noopener noreferrer" target="_blank">
+     Visit PIRB Main Site
+    </a>
+   </nav>
+  </header>
+  <aside aria-label="Sticky side menu" class="fixed top-20 left-0 z-50 h-[calc(100vh-5rem)] bg-white shadow-lg rounded-r-lg overflow-hidden" id="sticky-menu">
+   <nav aria-label="Side navigation" class="flex flex-col h-full" role="navigation">
+    <a aria-label="Home" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="index.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-home text-blue-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-blue-700 select-none">
+      Home
+     </span>
+    </a>
+    <a aria-label="Opportunities" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="opportunities.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-briefcase text-green-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-green-700 select-none">
+      Opportunities
+     </span>
+    </a>
+    <a aria-label="Industry Insights" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="industry-insights.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-industry text-yellow-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-yellow-700 select-none">
+      Industry Insights
+     </span>
+    </a>
+    <a aria-label="Career Paths" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="career-paths.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-route text-purple-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-purple-700 select-none">
+      Career Paths
+     </span>
+    </a>
+    <a aria-label="Education" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="education.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-graduation-cap text-red-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-red-700 select-none">
+      Education
+     </span>
+    </a>
+    <a aria-label="Beyond Qualification" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="beyond-qualification.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-star text-pink-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-pink-700 select-none">
+      Beyond Qualification
+     </span>
+    </a>
+    <a aria-label="Parents" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="parents.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-user-friends text-teal-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-teal-700 select-none">
+      Parents
+     </span>
+    </a>
+    <a aria-label="Teachers" class="flex items-center space-x-0 md:space-x-4 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="teachers.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-chalkboard-teacher text-indigo-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-indigo-700 select-none">
+      Teachers
+     </span>
+    </a>
+   </nav>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="relative h-[90vh]">
+   <div class="absolute inset-0 bg-black opacity-40">
+   </div>
+   <img alt="Teacher guiding students with plumbing diagrams on a whiteboard in a classroom" class="w-full h-full object-cover" height="90vh" src="https://storage.googleapis.com/a1aa/image/ecc17863-c0bf-4ddb-72ce-408f40e72c97.jpg" width="2070"/>
+   <div class="absolute inset-0 flex items-center">
+    <div class="container mx-auto px-4 z-10" data-aos="fade-up">
+     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 max-w-4xl leading-tight">
+      Help your students discover a hands-on career that builds skills, stability, and a future
+     </h1>
+     <p class="text-xl md:text-2xl text-white font-medium">
+      Plumbing is full of opportunity.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Why Plumbing Matters -->
+  <section class="py-16 bg-white" id="why-plumbing-matters">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Why Plumbing Matters
+    </h2>
+    <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
+     <p class="text-lg text-gray-700 mb-8">
+      As an educator, you help shape students' understanding of meaningful careers. Plumbing is often overlooked — yet it offers:
+     </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+     <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-shield-alt text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Stability
+      </h3>
+      <p class="text-gray-600">
+       Plumbing is an essential service with consistent demand, providing long-term career security.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-chart-line text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Growth
+      </h3>
+      <p class="text-gray-600">
+       From apprenticeships to business ownership, plumbing offers diverse advancement opportunities.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-globe-africa text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Real Impact
+      </h3>
+      <p class="text-gray-600">
+       Plumbers play a vital role in public health, environmental sustainability, and community infrastructure.
+      </p>
+     </div>
+    </div>
+    <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+     <p class="text-lg text-gray-700 font-medium">
+      By promoting plumbing as a career, you help students explore practical learning, technical skills, and diverse pathways to success.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Promote the Value of Skilled Trades -->
+  <section class="py-16 bg-gray-50" id="value-of-trades">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right">
+      <img alt="Skilled trades workers installing pipes in a residential building, wearing safety gear" class="rounded-lg shadow-lg w-full" height="690" src="https://storage.googleapis.com/a1aa/image/863aa7ec-a649-4df2-637a-2ca7591e91bc.jpg" width="1035"/>
+     </div>
+     <div class="md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">
+       Promote the Value of Skilled Trades
+      </h2>
+      <p class="text-lg text-gray-700 mb-6">
+       Plumbing — like all skilled trades — deserves equal respect alongside traditional academic careers.
+      </p>
+      <div class="mb-8">
+       <h3 class="text-xl font-semibold text-blue-700 mb-4">
+        Critical Role of Plumbers
+       </h3>
+       <ul class="space-y-3">
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Ensuring safe water and sanitation
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Supporting sustainable water use
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Maintaining infrastructure that communities depend on
+         </span>
+        </li>
+       </ul>
+      </div>
+      <div class="mb-8">
+       <h3 class="text-xl font-semibold text-blue-700 mb-4">
+        Benefits of Skilled Trades
+       </h3>
+       <ul class="space-y-3">
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Hands-on problem-solving
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Career stability
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Growing opportunities in environmental sustainability
+         </span>
+        </li>
+       </ul>
+      </div>
+      <p class="text-gray-700 font-medium">
+       Help students see that job satisfaction comes from meaningful work — and skilled trades offer exactly that.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Highlight Career Opportunities in Plumbing -->
+  <section class="py-16 bg-white" id="career-opportunities">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Highlight Career Opportunities in Plumbing
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Hands-On Technical Roles -->
+     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md card-hover-effect" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-blue-600 p-4 text-white">
+       <i class="fas fa-tools text-3xl">
+       </i>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Hands-On Technical Roles
+       </h3>
+       <ul class="space-y-2 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Active, varied work environment
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Daily problem-solving and tangible results
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          High demand for skilled technicians
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Specializations -->
+     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md card-hover-effect" data-aos="fade-up" data-aos-delay="150">
+      <div class="bg-blue-600 p-4 text-white">
+       <i class="fas fa-solar-panel text-3xl">
+       </i>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Specializations
+       </h3>
+       <ul class="space-y-2 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Solar heating
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Gas fitting
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Green plumbing technologies
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Niche skills → higher earning potential
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Leadership & Management -->
+     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md card-hover-effect" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-blue-600 p-4 text-white">
+       <i class="fas fa-user-tie text-3xl">
+       </i>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Leadership &amp; Management
+       </h3>
+       <ul class="space-y-2 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Team leadership
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Project management
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Coordination of complex projects
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Entrepreneurship -->
+     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md card-hover-effect" data-aos="fade-up" data-aos-delay="250">
+      <div class="bg-blue-600 p-4 text-white">
+       <i class="fas fa-briefcase text-3xl">
+       </i>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Entrepreneurship
+       </h3>
+       <ul class="space-y-2 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Low barriers to business ownership
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Independence and flexible hours
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Financial growth potential
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Long-Term Growth & Global Demand -->
+     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md card-hover-effect" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-blue-600 p-4 text-white">
+       <i class="fas fa-globe text-3xl">
+       </i>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Long-Term Growth &amp; Global Demand
+       </h3>
+       <ul class="space-y-2 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Plumbing skills are transferable worldwide
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check text-blue-600 mt-1 mr-2">
+         </i>
+         <span>
+          Technology and sustainability trends keep the profession evolving
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- Start the Journey -->
+     <div class="bg-blue-800 text-white border border-gray-200 rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="350">
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-3">
+        Start the Journey
+       </h3>
+       <p class="mb-4">
+        Help your students explore plumbing career paths with these resources:
+       </p>
+       <button class="bg-white text-blue-800 px-6 py-2 rounded-md font-medium hover:bg-blue-100 transition">
+        Explore Training Programs
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Emphasize Practical Learning & Skills -->
+  <section class="py-16 bg-gray-50" id="practical-learning">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Emphasize Practical Learning &amp; Skills
+    </h2>
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right">
+      <img alt="Students learning practical plumbing skills in a workshop environment with tools and pipes" class="rounded-lg shadow-lg w-full" height="690" src="https://storage.googleapis.com/a1aa/image/61b1cd0b-4626-4a17-4720-eb595f5ba7e3.jpg" width="1035"/>
+     </div>
+     <div class="md:w-1/2" data-aos="fade-left">
+      <p class="text-lg text-gray-700 mb-6">
+       Plumbing is ideal for students who thrive in hands-on learning.
+      </p>
+      <div class="mb-6">
+       <h3 class="text-xl font-semibold text-blue-700 mb-3">
+        Practical Focus
+       </h3>
+       <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Apprenticeships provide real-world training
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Critical thinking, adaptability, and resilience are developed on the job
+         </span>
+        </li>
+       </ul>
+      </div>
+      <div class="mb-6">
+       <h3 class="text-xl font-semibold text-blue-700 mb-3">
+        Teaching Opportunity
+       </h3>
+       <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Help students value the balance between theory and practical application
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-600 mt-1 mr-3">
+         </i>
+         <span>
+          Guide them toward structured apprenticeships and reputable programs
+         </span>
+        </li>
+       </ul>
+      </div>
+      <div class="bg-blue-50 p-4 rounded-lg">
+       <h3 class="text-lg font-semibold text-blue-700 mb-2">
+        Lifelong Learning
+       </h3>
+       <p class="text-gray-700">
+        Plumbing fosters continuous development — from entry-level to specialization and leadership.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Subject Choices That Support Plumbing Skills -->
+  <section class="py-16 bg-white" id="subject-choices">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Subject Choices That Support Plumbing Skills
+    </h2>
+    <div class="max-w-4xl mx-auto">
+     <div class="grid md:grid-cols-2 gap-8">
+      <div data-aos="fade-up">
+       <h3 class="text-xl font-semibold text-blue-700 mb-4">
+        Core Subjects
+       </h3>
+       <div class="bg-gray-50 p-6 rounded-lg">
+        <div class="flex items-start mb-4">
+         <div class="bg-blue-100 p-2 rounded-full mr-4">
+          <i class="fas fa-square-root-alt text-blue-600">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-gray-800">
+           Mathematics
+          </h4>
+          <p class="text-gray-600">
+           Essential for measurements, calculations, and system flows
+          </p>
+         </div>
+        </div>
+        <div class="flex items-start">
+         <div class="bg-blue-100 p-2 rounded-full mr-4">
+          <i class="fas fa-atom text-blue-600">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-gray-800">
+           Physical Sciences
+          </h4>
+          <p class="text-gray-600">
+           Valuable for understanding water dynamics and pressure
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+       <h3 class="text-xl font-semibold text-blue-700 mb-4">
+        Technical Subjects
+       </h3>
+       <div class="bg-gray-50 p-6 rounded-lg">
+        <div class="flex items-start mb-4">
+         <div class="bg-blue-100 p-2 rounded-full mr-4">
+          <i class="fas fa-drafting-compass text-blue-600">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-gray-800">
+           Engineering Graphics
+          </h4>
+          <p class="text-gray-600">
+           Read and interpret plans
+          </p>
+         </div>
+        </div>
+        <div class="flex items-start">
+         <div class="bg-blue-100 p-2 rounded-full mr-4">
+          <i class="fas fa-hammer text-blue-600">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-gray-800">
+           Construction Technology
+          </h4>
+          <p class="text-gray-600">
+           Practical skills, tools, materials
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-blue-100 p-6 rounded-lg">
+       <h3 class="text-xl font-semibold text-blue-800 mb-3">
+        Civil Services (if available)
+       </h3>
+       <div class="flex items-start">
+        <div class="bg-blue-200 p-2 rounded-full mr-4">
+         <i class="fas fa-tint text-blue-700">
+         </i>
+        </div>
+        <div>
+         <p class="text-gray-700">
+          <strong>
+           Targeted knowledge
+          </strong>
+          in water supply, drainage, and infrastructure
+         </p>
+         <p class="text-gray-700 mt-2">
+          <strong>
+           Directly aligned
+          </strong>
+          to plumbing training and practice
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mt-8 text-center" data-aos="fade-up">
+      <p class="text-lg text-gray-700 font-medium">
+       Encourage students to see how these subjects directly support a successful plumbing career.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Cultivate a Positive Work Ethic & Growth Mindset -->
+  <section class="py-16 bg-gray-50" id="work-ethic">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Cultivate a Positive Work Ethic &amp; Growth Mindset
+    </h2>
+    <p class="text-lg text-center text-gray-700 mb-12 max-w-3xl mx-auto" data-aos="fade-up">
+     Plumbing success depends on:
+    </p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-fist-raised text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Strong Work Ethic
+      </h3>
+      <p class="text-gray-600">
+       Reliability, responsibility, and pride in quality work are essential in plumbing.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="150">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-running text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Perseverance
+      </h3>
+      <p class="text-gray-600">
+       Problem-solving under challenging conditions is a daily part of the job.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-search text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Attention to Detail
+      </h3>
+      <p class="text-gray-600">
+       Small errors can have big consequences in plumbing systems.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="250">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-seedling text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Growth Mindset
+      </h3>
+      <p class="text-gray-600">
+       Plumbing is an evolving trade — continuous learning is key to success.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-random text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Adaptability
+      </h3>
+      <p class="text-gray-600">
+       No two projects are alike — flexibility is essential in this career.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md trait-card" data-aos="fade-up" data-aos-delay="350">
+      <div class="text-blue-600 mb-4">
+       <i class="fas fa-hands-helping text-3xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3">
+       Teamwork
+      </h3>
+      <p class="text-gray-600">
+       Collaboration with clients, colleagues, and other trades is crucial.
+      </p>
+     </div>
+    </div>
+    <div class="mt-12 text-center" data-aos="fade-up">
+     <p class="text-lg text-gray-700 font-medium">
+      Help students embrace these qualities early to set them up for success in plumbing and beyond.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Encourage Networking & Community Connections -->
+  <section class="py-16 bg-white" id="networking">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12" data-aos="fade-up">
+     Encourage Networking &amp; Community Connections
+    </h2>
+    <div class="max-w-4xl mx-auto">
+     <div class="bg-gray-50 p-8 rounded-lg shadow-sm" data-aos="fade-up">
+      <p class="text-lg text-gray-700 mb-8">
+       Early networking opens doors to mentorship, apprenticeship opportunities, and long-term professional support.
+      </p>
+      <h3 class="text-xl font-semibold text-blue-700 mb-6">
+       Actions for Educators
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6">
+       <div class="flex items-start">
+        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-10 h-10">
+         <span class="text-blue-800 font-bold">
+          1
+         </span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800 mb-2">
+          Introduce industry events and professional bodies
+         </h4>
+         <p class="text-gray-600">
+          (PIRB, IOPSA)
+         </p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-10 h-10">
+         <span class="text-blue-800 font-bold">
+          2
+         </span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800 mb-2">
+          Promote student involvement in trade fairs and expos
+         </h4>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-10 h-10">
+         <span class="text-blue-800 font-bold">
+          3
+         </span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800 mb-2">
+          Encourage mentorship from experienced plumbers
+         </h4>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-10 h-10">
+         <span class="text-blue-800 font-bold">
+          4
+         </span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800 mb-2">
+          Guide toward reputable apprenticeship programs
+         </h4>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="bg-blue-100 p-3 rounded-full mr-4 flex items-center justify-center w-10 h-10">
+         <span class="text-blue-800 font-bold">
+          5
+         </span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800 mb-2">
+          Highlight value of professional bodies
+         </h4>
+         <p class="text-gray-600">
+          Builds credibility and career connections
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="mt-8">
+       <p class="text-lg text-gray-700 font-medium">
+        Networking fosters both confidence and opportunity — and helps students transition smoothly into the plumbing industry.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-800 text-white">
+   <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">
+     Empower Your Students with Plumbing Career Resources
+    </h2>
+    <p class="text-xl max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
+     Access tools and information to guide students toward rewarding plumbing careers.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+     <button class="bg-white text-blue-800 px-8 py-3 rounded-md font-medium hover:bg-blue-100 transition">
+      Visit PIRB Careers Portal
+     </button>
+     <button class="bg-transparent border border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white hover:text-blue-800 transition">
+      Download Educator Resources
+     </button>
+     <button class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-yellow-400 transition">
+      Contact PIRB for Support
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between">
+     <div class="mb-8 md:mb-0">
+      <div class="flex items-center mb-4">
+       <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">
+        PIRB
+       </div>
+       <span class="text-xl font-semibold">
+        Plumbing Careers
+       </span>
+      </div>
+      <p class="text-gray-400 max-w-xs" tabindex="0">
+       Your guide to a rewarding career in the plumbing profession.
+      </p>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div>
+       <h3 class="text-lg font-semibold mb-4" tabindex="0">
+        Explore
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Home
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Opportunities
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Industry
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Career
+         </a>
+        </li>
+        <li>
+         <a class="text-blue-400 hover:text-white transition" href="#">
+          Education
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="text-lg font-semibold mb-4" tabindex="0">
+        Resources
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Students
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Parents
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Teachers
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="text-lg font-semibold mb-4" tabindex="0">
+        Connect
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Contact Us
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="https://www.pirb.co.za">
+          PIRB Main Site
+         </a>
+        </li>
+        <li class="flex space-x-4 mt-4">
+         <a aria-label="Facebook" class="text-gray-400 hover:text-white" href="#">
+          <i aria-hidden="true" class="fab fa-facebook-f">
+          </i>
+         </a>
+         <a aria-label="Twitter" class="text-gray-400 hover:text-white" href="#">
+          <i aria-hidden="true" class="fab fa-twitter">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="text-gray-400 hover:text-white" href="#">
+          <i aria-hidden="true" class="fab fa-linkedin-in">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400" tabindex="0">
+     <p>
+      © 2023 Plumbing Industry Registration Board. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+   AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  </script>
+ </body>
+</html>

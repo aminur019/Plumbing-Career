@@ -86,6 +86,30 @@
             }
         }
   </style>
+  <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
  </head>
  <body class="font-sans antialiased text-gray-800">
   <!-- Header & Navigation -->
@@ -236,8 +260,8 @@
    </nav>
   </aside>
   <!-- Hero Section -->
-  <section class="relative min-h-[70vh] flex items-center justify-center text-white">
-   <img alt="A diverse group of plumbers working together on pipes in a modern building, showcasing teamwork and opportunity in the plumbing profession" class="absolute inset-0 w-full h-full object-cover brightness-50" height="700" src="https://storage.googleapis.com/a1aa/image/1d548a91-114f-4ea7-7816-a224e195bf86.jpg" width="2070"/>
+  <section class="relative min-h-[70vh] flex items-center justify-center text-white h-[90vh]">
+   <img alt="A diverse group of plumbers working together on pipes in a modern building, showcasing teamwork and opportunity in the plumbing profession" class="absolute inset-0 w-full h-[90vh] object-cover brightness-50" height="700" src="https://storage.googleapis.com/a1aa/image/1d548a91-114f-4ea7-7816-a224e195bf86.jpg" width="2070"/>
    <div class="container mx-auto px-4 py-20 text-center relative z-10" data-aos="fade-up">
     <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
      If you want a career that matters — and one that is always evolving — plumbing is a world of opportunity.

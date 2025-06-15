@@ -106,6 +106,30 @@
       }
     }
   </style>
+  <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
  </head>
 <body class="font-sans bg-gray-50">
   <!-- Header & Navigation -->
@@ -213,8 +237,8 @@
   <!-- Progress Indicator -->
 
   <!-- Hero Section -->
-  <section class="hero-education min-h-[70vh] flex items-center justify-center text-white relative">
-   <img alt="A professional plumbing training environment with tools and students learning practical skills in a workshop" height="700" src="https://storage.googleapis.com/a1aa/image/0ca6fdad-e27f-449c-d9b5-1161383deebb.jpg" width="2070"/>
+  <section class="hero-education min-h-[90vh] flex items-center justify-center text-white relative">
+   <img alt="A professional plumbing training environment with tools and students learning practical skills in a workshop"  class="h-[90vh]"" src="https://storage.googleapis.com/a1aa/image/0ca6fdad-e27f-449c-d9b5-1161383deebb.jpg" width="2070"/>
    <div class="container mx-auto px-4 py-20 text-center" data-aos="fade-up">
     <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
      Start your journey in plumbing with the right training, tools, and mindset — and turn opportunity into a lasting career.
