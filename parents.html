@@ -101,7 +101,7 @@
         }
       }
   </style>
-   <script>
+	<script>
         // Right-click নিষ্ক্রিয় করতে
         document.addEventListener('contextmenu', (event) => event.preventDefault());
 
@@ -1058,6 +1058,15 @@
       offset: 100,
     });
 
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+      mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+    });
+	
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
