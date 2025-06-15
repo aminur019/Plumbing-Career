@@ -1,0 +1,839 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   A World of Opportunities | Plumbing Careers
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+   .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+        }
+        #sticky-menu {
+            transition: width 0.3s ease;
+            width: 3.5rem;
+        }
+        #sticky-menu:hover {
+            width: 14rem;
+        }
+        #sticky-menu nav a {
+            transition: padding 0.3s ease;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        #sticky-menu:hover nav a {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+        #sticky-menu nav a span.text-label {
+            opacity: 0;
+            white-space: nowrap;
+            transition: opacity 0.3s ease;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 0;
+        }
+        #sticky-menu:hover nav a span.text-label {
+            opacity: 1;
+            max-width: 1000px;
+            margin-left: 0.75rem;
+        }
+        #progress-nav {
+            display: none;
+        }
+        @media (max-width: 767px) {
+            #sticky-menu {
+                display: none;
+            }
+            #progress-nav {
+                display: flex;
+                position: fixed;
+                top: 20px;
+                left: 0;
+                flex-direction: column;
+                background: white;
+                box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+                border-radius: 0 0.5rem 0.5rem 0;
+                padding: 0.75rem;
+                z-index: 40;
+            }
+        }
+  </style>
+ </head>
+ <body class="font-sans antialiased text-gray-800">
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center">
+     <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
+      PIRB
+     </div>
+     <span class="text-xl font-semibold text-gray-800">
+      Plumbing Careers
+     </span>
+    </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#more-than-trade">
+      More Than a Trade
+     </a>
+     <a class="nav-link font-medium text-blue-600 hover:text-blue-500 transition duration-300" href="#importance">
+      Importance
+     </a>
+     <a class="nav-link font-medium text-blue-600 hover:text-blue-500 transition duration-300" href="#myths-realities">
+      Myths &amp; Realities
+     </a>
+     <a class="nav-link font-medium text-blue-600 hover:text-blue-500 transition duration-300" href="#opportunities">
+      Opportunities
+     </a>
+    </nav>
+    <nav class="hidden space-x-8">
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#">
+      Home
+     </a>
+     <a class="nav-link font-medium text-blue-600 hover:text-blue-500 transition duration-300" href="#">
+      Opportunities
+     </a>
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#">
+      Career Paths
+     </a>
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#">
+      Education
+     </a>
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#">
+      For Parents
+     </a>
+     <a class="nav-link font-medium text-gray-600 hover:text-blue-500 transition duration-300" href="#">
+      For Teachers
+     </a>
+     <a class="ml-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300" href="https://www.pirb.co.za">
+      Main Site
+     </a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <!-- Mobile menu -->
+   <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200 pb-8" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="index.html">
+     Home
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="opportunities.html">
+     Opportunities
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="industry-insights.html">
+     Industry Insights
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="career-paths.html">
+     Career Paths
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="education.html">
+     Education
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="beyond-qualification.html">
+     Beyond Qualification
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-blue-50" href="parents.html">
+     Parents
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-blue-50" href="teachers.html">
+     Teachers
+    </a>
+    <a class="block px-4 py-3 mt-2 mx-4 text-center border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition" href="https://www.pirb.co.za" rel="noopener noreferrer" target="_blank">
+     Visit PIRB Main Site
+    </a>
+   </nav>
+  </header>
+  <aside aria-label="Sticky side menu" class="fixed top-20 left-0 z-50 h-[calc(100vh-5rem)] bg-white shadow-lg rounded-r-lg overflow-hidden" id="sticky-menu">
+   <nav aria-label="Side navigation" class="flex flex-col h-full" role="navigation">
+    <a aria-label="Home" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="index.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-home text-blue-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-blue-700 select-none">
+      Home
+     </span>
+    </a>
+    <a aria-label="Opportunities" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="opportunities.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-briefcase text-green-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-green-700 select-none">
+      Opportunities
+     </span>
+    </a>
+    <a aria-label="Industry Insights" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="industry-insights.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-industry text-yellow-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-yellow-700 select-none">
+      Industry Insights
+     </span>
+    </a>
+    <a aria-label="Career Paths" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="career-paths.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-route text-purple-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-purple-700 select-none">
+      Career Paths
+     </span>
+    </a>
+    <a aria-label="Education" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="education.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-graduation-cap text-red-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-red-700 select-none">
+      Education
+     </span>
+    </a>
+    <a aria-label="Beyond Qualification" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="beyond-qualification.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-star text-pink-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-pink-700 select-none">
+      Beyond Qualification
+     </span>
+    </a>
+    <a aria-label="Parents" class="flex items-center space-x-0 md:space-x-4 border-b border-gray-200 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="parents.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-user-friends text-teal-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-teal-700 select-none">
+      Parents
+     </span>
+    </a>
+    <a aria-label="Teachers" class="flex items-center space-x-0 md:space-x-4 hover:bg-blue-50 focus:bg-blue-100 focus:outline-none transition px-3 py-4 cursor-pointer" href="teachers.html" tabindex="0">
+     <i aria-hidden="true" class="fas fa-chalkboard-teacher text-indigo-600 text-lg w-6 text-center">
+     </i>
+     <span class="text-label font-semibold text-indigo-700 select-none">
+      Teachers
+     </span>
+    </a>
+   </nav>
+  </aside>
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center text-white">
+   <img alt="A diverse group of plumbers working together on pipes in a modern building, showcasing teamwork and opportunity in the plumbing profession" class="absolute inset-0 w-full h-full object-cover brightness-50" height="700" src="https://storage.googleapis.com/a1aa/image/1d548a91-114f-4ea7-7816-a224e195bf86.jpg" width="2070"/>
+   <div class="container mx-auto px-4 py-20 text-center relative z-10" data-aos="fade-up">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
+     If you want a career that matters — and one that is always evolving — plumbing is a world of opportunity.
+    </h1>
+    <a aria-label="Scroll down to More Than a Trade section" class="inline-block mt-8 animate-bounce" href="#more-than-trade">
+     <i class="fas fa-chevron-down text-2xl">
+     </i>
+    </a>
+   </div>
+  </section>
+  <!-- Plumbing: More Than a Trade -->
+  <section class="py-20 bg-white" id="more-than-trade">
+   <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6">
+      Plumbing: More Than a Trade
+     </h2>
+     <p class="text-xl text-gray-600">
+      Plumbing does more than fix pipes — it keeps communities safe and healthy. Clean water, proper sanitation, safe heating — none of this happens without skilled plumbers.
+     </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+     <div class="bg-gray-50 p-6 rounded-lg text-center card-hover transition duration-300" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+       <i class="fas fa-chart-line text-blue-600 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">
+       Career Growth
+      </h3>
+      <p class="text-gray-600 text-sm">
+       From apprentice to master plumber to business owner
+      </p>
+     </div>
+     <div class="bg-gray-50 p-6 rounded-lg text-center card-hover transition duration-300" data-aos="fade-up" data-aos-delay="150">
+      <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+       <i class="fas fa-tools text-blue-600 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">
+       Specialization
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Focus on areas like gas fitting or green plumbing
+      </p>
+     </div>
+     <div class="bg-gray-50 p-6 rounded-lg text-center card-hover transition duration-300" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+       <i class="fas fa-briefcase text-blue-600 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">
+       Entrepreneurship
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Start and grow your own plumbing business
+      </p>
+     </div>
+     <div class="bg-gray-50 p-6 rounded-lg text-center card-hover transition duration-300" data-aos="fade-up" data-aos-delay="250">
+      <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+       <i class="fas fa-globe text-blue-600 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">
+       Global Mobility
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Work opportunities around the world
+      </p>
+     </div>
+     <div class="bg-gray-50 p-6 rounded-lg text-center card-hover transition duration-300" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+       <i class="fas fa-leaf text-blue-600 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">
+       Environmental Impact
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Contribute to sustainable water solutions
+      </p>
+     </div>
+    </div>
+    <div class="max-w-3xl mx-auto text-center mt-16" data-aos="fade-up">
+     <p class="text-xl text-gray-600">
+      Whether you're starting out or advancing your career, plumbing offers stability, variety, and the chance to make a real difference.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- The Importance of Plumbing -->
+  <section class="py-20 bg-gray-50" id="importance">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+      <img alt="Close-up of a plumber fixing a water pipe with tools, emphasizing the importance of plumbing in public health and safety" class="rounded-lg shadow-xl w-full h-auto" height="600" src="https://storage.googleapis.com/a1aa/image/2bcdaba2-d555-4f3f-d5d7-3427c8aa9fcf.jpg" width="800"/>
+     </div>
+     <div class="md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">
+       The Importance of Plumbing
+      </h2>
+      <p class="text-lg text-gray-600 mb-6">
+       Plumbing is essential to public health and the environment. Without it, we wouldn't have:
+      </p>
+      <ul class="space-y-4 mb-8">
+       <li class="flex items-start">
+        <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+         <i class="fas fa-check text-blue-600">
+         </i>
+        </div>
+        <div>
+         <h3 class="font-semibold text-gray-800">
+          Clean drinking water
+         </h3>
+         <p class="text-gray-600">
+          Safe, potable water for homes and businesses
+         </p>
+        </div>
+       </li>
+       <li class="flex items-start">
+        <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+         <i class="fas fa-check text-blue-600">
+         </i>
+        </div>
+        <div>
+         <h3 class="font-semibold text-gray-800">
+          Reliable sanitation
+         </h3>
+         <p class="text-gray-600">
+          Proper waste removal to prevent disease
+         </p>
+        </div>
+       </li>
+       <li class="flex items-start">
+        <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+         <i class="fas fa-check text-blue-600">
+         </i>
+        </div>
+        <div>
+         <h3 class="font-semibold text-gray-800">
+          Safe heating systems
+         </h3>
+         <p class="text-gray-600">
+          Properly installed and maintained heating
+         </p>
+        </div>
+       </li>
+      </ul>
+      <p class="text-lg text-gray-600 mb-6">
+       In South Africa, plumbers play a key role in maintaining safe water systems, preventing disease, and promoting sustainable water use.
+      </p>
+      <p class="text-lg text-gray-600">
+       And today, plumbing is about more than pipes — it's about building a future. Green plumbing practices help address the global water crisis and climate change by improving water conservation and energy efficiency.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Myths & Realities of the Plumbing Profession -->
+  <section class="py-20 bg-white" id="myths-realities">
+   <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6">
+      Myths &amp; Realities of the Plumbing Profession
+     </h2>
+     <p class="text-xl text-gray-600">
+      Let's set the record straight about common misconceptions in the plumbing industry
+     </p>
+    </div>
+    <div class="max-w-3xl mx-auto space-y-4">
+     <div class="accordion border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+      <button aria-controls="accordion-content-1" aria-expanded="false" class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center" id="accordion-btn-1">
+       <div class="flex items-center">
+        <div class="bg-red-100 p-2 rounded-full mr-4">
+         <i class="fas fa-times text-red-600">
+         </i>
+        </div>
+        <span class="font-semibold text-lg">
+         Myth: Plumbing is only for people who didn't succeed elsewhere.
+        </span>
+       </div>
+       <i class="accordion-icon fas fa-chevron-down text-gray-500 transition-transform duration-300">
+       </i>
+      </button>
+      <div aria-labelledby="accordion-btn-1" class="accordion-content px-6 bg-white" id="accordion-content-1" role="region">
+       <div class="py-6">
+        <div class="flex items-start mb-4">
+         <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+          <i class="fas fa-check text-green-600">
+          </i>
+         </div>
+         <div>
+          <h3 class="font-semibold text-gray-800">
+           Reality
+          </h3>
+          <p class="text-gray-600 mt-2">
+           Plumbing is a highly skilled trade that requires technical knowledge, certifications, and continuous learning. Many plumbers run successful businesses and enjoy long-term career growth. The profession attracts people who enjoy problem-solving, working with their hands, and making a tangible difference in their communities.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="accordion border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+      <button aria-controls="accordion-content-2" aria-expanded="false" class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center" id="accordion-btn-2">
+       <div class="flex items-center">
+        <div class="bg-red-100 p-2 rounded-full mr-4">
+         <i class="fas fa-times text-red-600">
+         </i>
+        </div>
+        <span class="font-semibold text-lg">
+         Myth: Plumbing is dirty, unpleasant work.
+        </span>
+       </div>
+       <i class="accordion-icon fas fa-chevron-down text-gray-500 transition-transform duration-300">
+       </i>
+      </button>
+      <div aria-labelledby="accordion-btn-2" class="accordion-content px-6 bg-white" id="accordion-content-2" role="region">
+       <div class="py-6">
+        <div class="flex items-start mb-4">
+         <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+          <i class="fas fa-check text-green-600">
+          </i>
+         </div>
+         <div>
+          <h3 class="font-semibold text-gray-800">
+           Reality
+          </h3>
+          <p class="text-gray-600 mt-2">
+           Today's plumbers use advanced tools and technology — from water-saving devices to eco-friendly installations. Problem-solving and technical skill are at the heart of the job. Many plumbing professionals work in clean environments installing and maintaining sophisticated systems in modern buildings, hospitals, and industrial facilities.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="accordion border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+      <button aria-controls="accordion-content-3" aria-expanded="false" class="accordion-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center" id="accordion-btn-3">
+       <div class="flex items-center">
+        <div class="bg-red-100 p-2 rounded-full mr-4">
+         <i class="fas fa-times text-red-600">
+         </i>
+        </div>
+        <span class="font-semibold text-lg">
+         Myth: Plumbing is low-paying with limited advancement.
+        </span>
+       </div>
+       <i class="accordion-icon fas fa-chevron-down text-gray-500 transition-transform duration-300">
+       </i>
+      </button>
+      <div aria-labelledby="accordion-btn-3" class="accordion-content px-6 bg-white" id="accordion-content-3" role="region">
+       <div class="py-6">
+        <div class="flex items-start mb-4">
+         <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+          <i class="fas fa-check text-green-600">
+          </i>
+         </div>
+         <div>
+          <h3 class="font-semibold text-gray-800">
+           Reality
+          </h3>
+          <p class="text-gray-600 mt-2">
+           Plumbing offers a stable income and numerous growth paths — specialization, business ownership, and leadership roles. Experienced plumbers and those with specialized skills can earn excellent salaries, and plumbing business owners often have incomes that rival or exceed many white-collar professions. The trades in general are facing a shortage of skilled workers, which drives up earning potential.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Opportunities Abound -->
+  <section class="py-20 bg-gray-50" id="opportunities">
+   <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6">
+      Opportunities Abound
+     </h2>
+     <p class="text-xl text-gray-600">
+      The plumbing industry is evolving fast. Those who invest in skills and learning will find exciting new opportunities.
+     </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="100">
+      <img alt="A plumber in a hard hat reviewing blueprints on a construction site, representing career advancement opportunities" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/b84dd4da-68c8-4a89-6bb4-55dbcf426c91.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Career Advancement
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Plumbers can move beyond tools and pipes into roles like project management, consulting, or training the next generation. These positions allow plumbers to contribute at a strategic level and shape the future of the trade.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Management
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Consulting
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Training
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="150">
+      <img alt="A plumber installing solar water heating panels on a roof, illustrating specialization in solar heating" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/6b973ae2-85bf-44c5-2fa6-1f67cdc3813b.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Specialization
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Plumbing offers many specialization paths, including solar heating installation, gas fitting, drainage, and green plumbing (energy efficiency &amp; water conservation). Becoming a niche expert leads to higher earnings and more diverse work.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Solar Heating
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Gas Fitting
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Green Plumbing
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="200">
+      <img alt="A plumber shaking hands with a client in front of a company van, symbolizing owning your own business" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/aa2281f3-8f63-4e53-d3ee-af720314b8b9.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Owning Your Own Business
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Many experienced plumbers choose to start their own businesses. Benefits include flexible work schedules, choice of clients, greater earning potential, and independence and control over your professional life.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Entrepreneurship
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Flexibility
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Independence
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="250">
+      <img alt="A plumber working on piping in an international airport, representing global opportunities" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/f7ca9517-d0c5-4c00-19f1-ce2eeddd0bbf.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Global Opportunities
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Plumbing skills are portable — there is demand worldwide for qualified plumbers. South African plumbers can access work abroad where technical expertise is valued, often with excellent compensation packages.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         International
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         High Demand
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Portable Skills
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="300">
+      <img alt="A plumber installing a rainwater harvesting system on a residential building, highlighting green and sustainable solutions" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/03f9baea-7ca6-45b6-2791-6249ae6ecb8c.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Green &amp; Sustainable Solutions
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Plumbers are at the forefront of sustainable building. Key areas include water conservation systems, water recovery, rainwater harvesting, and energy-efficient installations. In an era of climate change, this work is vital.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Sustainability
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Water Conservation
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Energy Efficiency
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition duration-500" data-aos="fade-up" data-aos-delay="350">
+      <img alt="A plumber using a tablet to monitor smart home water systems, illustrating technology integration" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/2aead187-8868-4717-4d1a-46eb374d4dfc.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Technology Integration
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Modern plumbing incorporates smart home technology, water monitoring systems, and advanced materials. Technologically savvy plumbers are in high demand as buildings become more connected and efficient.
+       </p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Smart Homes
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         IoT
+        </span>
+        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+         Innovation
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Next Page CTA -->
+  <section class="py-16 bg-blue-600 text-white">
+   <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-6">
+     Ready to explore what a plumbing career really looks like?
+    </h2>
+    <p class="text-xl mb-8 max-w-3xl mx-auto">
+     Discover the day-to-day reality of working in the plumbing industry and the different paths you can take.
+    </p>
+    <a aria-label="Inside the Plumbing Industry" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105" href="#">
+     Inside the Plumbing Industry
+     <i class="fas fa-arrow-right ml-2">
+     </i>
+    </a>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between">
+     <div class="mb-8 md:mb-0">
+      <div class="flex items-center mb-4">
+       <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">
+        PIRB
+       </div>
+       <span class="text-xl font-semibold">
+        Plumbing Careers
+       </span>
+      </div>
+      <p class="text-gray-400 max-w-xs">
+       Your guide to a rewarding career in the plumbing profession.
+      </p>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div>
+       <h3 class="text-lg font-semibold mb-4">
+        Explore
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Home
+         </a>
+        </li>
+        <li>
+         <a class="text-blue-400 hover:text-white transition" href="#">
+          Opportunities
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Career Paths
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="text-lg font-semibold mb-4">
+        Resources
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Students
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Parents
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          For Teachers
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h3 class="text-lg font-semibold mb-4">
+        Connect
+       </h3>
+       <ul class="space-y-2">
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="#">
+          Contact Us
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="https://www.pirb.co.za">
+          PIRB Main Site
+         </a>
+        </li>
+        <li class="flex space-x-4 mt-4">
+         <a aria-label="Facebook" class="text-gray-400 hover:text-white" href="#">
+          <i class="fab fa-facebook-f">
+          </i>
+         </a>
+         <a aria-label="Twitter" class="text-gray-400 hover:text-white" href="#">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="text-gray-400 hover:text-white" href="#">
+          <i class="fab fa-linkedin-in">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+     <p>
+      © 2023 Plumbing Industry Registration Board. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <button aria-label="Back to top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="back-to-top">
+   <i class="fas fa-arrow-up">
+   </i>
+  </button>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+   AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+            mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !expanded);
+        });
+
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordion = button.closest('.accordion');
+                const isActive = accordion.classList.contains('active');
+                // Close all accordions
+                document.querySelectorAll('.accordion').forEach(acc => {
+                    acc.classList.remove('active');
+                    acc.querySelector('.accordion-btn').setAttribute('aria-expanded', 'false');
+                });
+                if (!isActive) {
+                    accordion.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+  </script>
+ </body>
+</html>
